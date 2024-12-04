@@ -614,3 +614,75 @@ p{
     font-size: 20px;
     text-align: center;
   }
+
+
+  /* Small devices (phones, < 576px) */
+@media only screen and (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 40px; /* Adjust for smaller screens */
+    }
+    .menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .img1 {
+        height: 50px;
+        width: 50px;
+    }
+    .square-img {
+        width: 90%;
+        height: auto;
+    }
+    .wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Medium devices (tablets, 576px - 768px) */
+@media only screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu {
+        gap: 30px;
+    }
+    .hero-section h1 {
+        font-size: 60px;
+    }
+    .square-img {
+        width: 80%;
+    }
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large devices (desktops, 768px - 1200px) */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .menu {
+        gap: 40px;
+    }
+}
+
+/* Extra-large devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+    .hero-section h1 {
+        font-size: 100px;
+    }
+    .menu {
+        gap: 50px;
+    }
+}
